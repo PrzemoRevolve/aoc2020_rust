@@ -18,6 +18,7 @@ fn main() {
     match day {
         1 => lib::days::day1::run(),
         2 => lib::days::day2::run(),
+        3 => lib::days::day3::run(),
         _ => println!("Day {} not found", day),
     }
 }
