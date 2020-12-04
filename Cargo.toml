@@ -1,0 +1,18 @@
+[package]
+name = "aoc202_rust"
+version = "0.1.0"
+authors = ["Przemyslaw Nowak <przemyslaw.nowak@revolve.pro>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "aoc2020_rust"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.33.3"
