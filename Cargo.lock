@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "aoc202_rust"
+name = "aoc2020_rust"
 version = "0.1.0"
 dependencies = [
  "clap",

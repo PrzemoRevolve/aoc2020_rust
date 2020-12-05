@@ -1,5 +1,5 @@
 [package]
-name = "aoc202_rust"
+name = "aoc2020_rust"
 version = "0.1.0"
 authors = ["Przemyslaw Nowak <przemyslaw.nowak@revolve.pro>"]
 edition = "2018"
