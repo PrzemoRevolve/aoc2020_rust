@@ -23,20 +23,17 @@ fn second_problem(input: &Vec<String>) -> String {
 }
 
 fn get_groups(input: &Vec<String>) -> Vec<Vec<&String>> {
-    let mut groups = vec![];
-    let mut new_group = vec![];
+    input.iter().fold(vec![vec![]], |mut acc, line| {
+        let last = acc.len() - 1;
 
-    for line in input {
         if line.is_empty() {
-            groups.push(new_group);
-            new_group = vec![];
+            acc.push(vec![]);
         } else {
-            new_group.push(line)
+            acc.get_mut(last).unwrap().push(line);
         }
-    }
-    groups.push(new_group);
 
-    groups
+        acc
+    })
 }
 
 fn get_unique_chars(group: &Vec<&String>) -> Vec<char> {
