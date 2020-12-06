@@ -77,7 +77,7 @@ fn second_problem() -> String {
 
                         let unit = &value.1[value.1.len() - 2..];
                         let height: i32 =
-                            value.1[..value.1.len() - 2].parse().unwrap_or_else(|e| {
+                            value.1[..value.1.len() - 2].parse().unwrap_or_else(|_e| {
                                 println!("ERRORED {:?}", value);
                                 panic!("er");
                             });
