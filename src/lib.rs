@@ -3,6 +3,8 @@ pub mod days;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
+struct Input(Vec<String>);
+
 /// Loads the input from the sources directory. Files have to be in
 /// /input/day-12-2.txt for day 12 problem 2 (and the same for others).
 fn read_input(day: u8) -> Vec<String> {
