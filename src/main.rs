@@ -36,6 +36,7 @@ fn main() {
         18 => lib::days::day18::run(18),
         19 => lib::days::day19::run(19),
         20 => lib::days::day20::run(20),
+        21 => lib::days::day21::run(21),
         _ => println!("Day {} not found", day),
     }
 }
